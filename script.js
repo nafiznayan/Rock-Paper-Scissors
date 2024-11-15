@@ -56,9 +56,21 @@ for (let i = 1; i <= 5; i++) {
 
 console.log(`Your Score: ${humanScore}`);
 console.log(`Opponents Score: ${computerScore}`);
+
 if (humanScore === computerScore) {
   console.log("Draw!");
+  alert(`Draw!\nYour Score: ${humanScore}\nOpponents Score: ${computerScore}`);
 }
-if (humanScore > computerScore) console.log("You Win!");
+if (humanScore > computerScore) {
+  console.log("You Win!");
+  alert(
+    `You Win!\nYour Score: ${humanScore}\nOpponents Score: ${computerScore}`
+  );
+}
 
-if (humanScore < computerScore) console.log("You Loose!");
+if (humanScore < computerScore) {
+  console.log("You Loose!");
+  alert(
+    `You Loose!\nYour Score: ${humanScore}\nOpponents Score: ${computerScore}`
+  );
+}
